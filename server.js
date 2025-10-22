@@ -217,6 +217,9 @@ app.delete('/strings/:string_value', (req, res) => {
 });
 
 
+app.get('/', (req, res) => {
+  res.send('🚀 String Analysis API is running!');
+});
 
 
 const PORT = process.env.PORT || 3000
